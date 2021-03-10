@@ -1,7 +1,6 @@
 === Fix Banner ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://example.com/
-Tags: comments, spam
+Contributors: FIXONWEB
+Tags: banner, anuncio, rotativo, imagem
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 5.6
