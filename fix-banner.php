@@ -7,7 +7,7 @@
  * Author URI:      https://fixonweb.com.br
  * Text Domain:     fix-banner
  * Domain Path:     /languages
- * Version:         0.1.2
+ * Version:         0.1.4
  * Fix ID:          161539
  * @package         Fix_Banner
  */
@@ -87,6 +87,7 @@ function fix_161530_tax_set_local() {
 }
 add_action( 'init', 'fix_161530_tax_set_local', 0 );
 
+add_shortcode("fix-banner", "fix161539_anuncio");
 add_shortcode("fix161539_anuncio", "fix161539_anuncio");
 function fix161539_anuncio($atts, $content = null){
 	extract(shortcode_atts(array(
