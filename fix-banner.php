@@ -7,7 +7,7 @@
  * Author URI:      https://fixonweb.com.br
  * Text Domain:     fix-banner
  * Domain Path:     /languages
- * Version:         0.1.4
+ * Version:         0.1.5
  * Fix ID:          161539
  * @package         Fix_Banner
  */
@@ -148,7 +148,7 @@ function fix161539_anuncio($atts, $content = null){
 	// print_r($attachments);
 	// echo '</pre>';
 	// return '';
-
+		ob_start();
 		?>
 		<div style="text-align: center;">
 			<img src="<?php echo $attachments[0]->guid; ?>" alt="">	
@@ -157,6 +157,6 @@ function fix161539_anuncio($atts, $content = null){
 			estartisticas: <?php echo $fix161539_exibicoes ?> | <?php echo $fix161539_data_recente ?>
 		</div>
 		<?php
-
+		return ob_get_clean();
 	}
 }
